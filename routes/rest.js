@@ -3,7 +3,7 @@ var _ = require('lodash');
 var router = express.Router();
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/orders');
-mongoose.connect('mongodb://orders:orders@ds029665.mlab.com:29665/orders');
+mongoose.connect('mongodb://portaltechnologics-server:frHFtTzsDnXiePXeRp6lNL4f3omNUpUpuk0zKom08myfeLiRJQIxxJEuad0eRagX9nThg0sB1tIxACDbME0weA==@portaltechnologics-server.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@portaltechnologics-server@');
 mongoose.Promise = global.Promise;
 
 var Order = mongoose.model('Order',
